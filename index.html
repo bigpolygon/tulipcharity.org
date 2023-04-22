@@ -2,65 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
 
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;
-            max-width: 500px;
-            margin: 0 auto;
-        }
 
-        .logo {
-            max-width: 100%;
-            height: auto;
-        }
+<!-- lightGallery CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-alpha.4/css/lightgallery.min.css">
+<!-- lightGallery JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-alpha.4/lightgallery.umd.min.js"></script>
 
-        .address {
-            color: #776AAF; /* #F2509C, #776AAF, #62ABD9, #63A644, #F2F2F2 */
-            text-align: center;
-            margin: 3px;
-            
-        }
-        .address p {
-            margin: 0px;
-        }
+ 
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-    </style>
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .address {
+      color: #776AAF;
+      /* #F2509C, #776AAF, #62ABD9, #63A644, #F2F2F2 */
+      text-align: center;
+      margin: 3px;
+
+    }
+
+    .address p {
+      margin: 0px;
+    }
+
+
+    .video-container {
+    position: relative;
+    padding-bottom: 80%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="logo-container">
-            <img src="content/tulipcharity_logo.jpg" alt="Tulip Charity" class="logo">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="address">
-                    <h3>Tulip Charity</h3>
-                    <p>T. <a href="tel:+9617735718">+961 7 735718</a></p>
-                    <p>M. <a href="tel:+96181916957">+961 81 916957</a></p>
-                    <p>M. <a href="tel:+96171960962">+961 71 960962</a></p>
-                    <p>E. administration@tulipcharity.org</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="content/tulipcharity_logo.jpg" alt="Tulip Charity" class="logo">
     </div>
+
+
+        <!-- Gallery -->
+        <div class="container mt-5">
+          <div class="row" id="lightgallery">
+
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture3_tulipcharity_org.jpeg">
+                  <img class="img-thumbnail" src="content/picture3_tulipcharity_org.jpeg" alt="Image 3">
+              </div>
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture4_tulipcharity_org.jpeg">
+                  <img class="img-thumbnail" src="content/picture4_tulipcharity_org.jpeg" alt="Image 4">
+              </div>
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture5_tulipcharity_org.jpeg">
+                  <img class="img-thumbnail" src="content/picture5_tulipcharity_org.jpeg" alt="Image 5">
+              </div>
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture6_tulipcharity_org.jpeg">
+                  <img class="img-thumbnail" src="content/picture6_tulipcharity_org.jpeg" alt="Image 6">
+              </div>
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture7_tulipcharity_org.jpeg">
+                  <img class="img-thumbnail" src="content/picture7_tulipcharity_org.jpeg" alt="Image 7">
+              </div>
+
+              <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture1_tulipcharity_org.jpeg">
+                <img class="img-thumbnail" src="content/picture1_tulipcharity_org.jpeg" alt="Image 1">
+            </div>
+            <div class="col-md-4 col-sm-6 mb-2" data-src="content/picture2_tulipcharity_org.jpeg">
+                <img class="img-thumbnail" src="content/picture2_tulipcharity_org.jpeg" alt="Image 2">
+            </div>
+          </div>
+      </div>
+
+    <!-- Address -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="address">
+          <h3>Tulip Charity</h3>
+          <p>T. <a href="tel:+9617735718">+961 7 735718</a></p>
+          <p>M. <a href="tel:+96181916957">+961 81 916957</a></p>
+          <p>M. <a href="tel:+96171960962">+961 71 960962</a></p>
+          <p>E. administration@tulipcharity.org</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Button -->
+    <div class="row">
+       <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      انقر هنا للمشاهدة
+    </button>   
+    </div>
+
+
+  
+
+    <!-- Video Popup -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">جمعية زهرة التوليب الخيرية</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="video-container">
+              <video controls class="w-300">
+                <source src="content/tulipcharity_video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const lightGalleryElement = document.getElementById("lightgallery");
+        lightGallery(lightGalleryElement, {
+            selector: ".col-md-4",
+        });
+    });
+</script> -->
+
 
 </body>
 
